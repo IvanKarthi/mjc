@@ -18,6 +18,10 @@ import java.util.Scanner;
 1234567
 */
 
+/**
+ * @author Karthikeyan
+ * @Date   Dec 22, 2016
+ */
 public class NumberPattern11 {
 
 	public static void main(String[] args) {

@@ -12,6 +12,10 @@ import java.util.Scanner;
    * 
 */
 
+/**
+ * @author Karthikeyan
+ * @Date   Dec 20, 2016
+ */
 public class DiamondPattern1 {
 
 	public static void main(String[] args) {

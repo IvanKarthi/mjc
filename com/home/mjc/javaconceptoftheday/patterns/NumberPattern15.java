@@ -12,6 +12,10 @@ import java.util.Scanner;
 7777777
 */
 
+/**
+ * @author Karthikeyan
+ * @Date   Dec 23, 2016
+ */
 public class NumberPattern15 {
 
 	public static void main(String[] args) {

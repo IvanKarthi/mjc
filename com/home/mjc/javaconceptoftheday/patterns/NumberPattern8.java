@@ -18,6 +18,10 @@ import java.util.Scanner;
 1 2 3 4 5 6 7
 */
 
+/**
+ * @author Karthikeyan
+ * @Date   Dec 17, 2016
+ */
 public class NumberPattern8 {
 
 	public static void main(String[] args) {
