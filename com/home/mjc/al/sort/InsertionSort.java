@@ -1,4 +1,4 @@
-package com.scjp.examples.al.sort;
+package com.home.mjc.al.sort;
 
 /*
  * If you have noticed in the program each time, the number of elements that are to be compared, increases in progression; 

@@ -1,4 +1,4 @@
-package com.scjp.examples.al.sort;
+package com.home.mjc.al.sort;
 
 /*
  * For bubble sort there are two loops that go through the elements that makes it a complexity of N*N i.e. O(N2). 

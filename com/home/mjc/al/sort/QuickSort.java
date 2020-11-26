@@ -1,4 +1,4 @@
-package com.scjp.examples.al.sort;
+package com.home.mjc.al.sort;
 
 /**
  * @author Karthikeyan
