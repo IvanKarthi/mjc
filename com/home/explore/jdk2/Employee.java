@@ -1,7 +1,7 @@
 /**
  * @author Karthikeyan.V
- * Concepts Used: POJO
- * Purpose: Simple Bean
+ * Concepts Used: Comparable and Comparator Implementation
+ * Purpose: Simple POJO Bean
  */
 
 package com.home.explore.jdk2;
@@ -16,11 +16,19 @@ public class Employee implements Comparable<Employee> {
 	private int age;
 	private Date dateOfJoining;
 
+	// Comparable Implementation
+	@Override
+	public int compareTo(Employee o) {
+		// Any of the Employee's property can be compared as below.
+		// return this.id - o.id;
+		return this.name.compareToIgnoreCase(o.name);
+	}
+
+	// Comparator Implementation
 	public static final Comparator<Employee> AgeComparator = new Comparator<Employee>() {
 		@Override
 		public int compare(Employee o1, Employee o2) {
-			return o1.age - o2.age; // This will work because age is positive
-									// integer
+			return o1.age - o2.age; // This will work as age is positive integer
 		}
 	};
 
@@ -30,7 +38,7 @@ public class Employee implements Comparable<Employee> {
 			return o1.salary - o2.salary; // salary is also positive integer
 		}
 	};
-	
+
 	public static final Comparator<Employee> ReverseSalaryComparator = new Comparator<Employee>() {
 		@Override
 		public int compare(Employee o1, Employee o2) {
@@ -62,14 +70,8 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public String toString() {
-		return "Employee{" + "id=" + id + ", name=" + name + ", salary=" + salary + ", age=" + age + ", dateOfJoining="
-				+ dateOfJoining + '}' +"\n";
-
-	}
-
-	@Override
-	public int compareTo(Employee o) {
-		return this.id - o.id;
+		return "Employee{" + "id=" + id + ", name=" + name + ", salary=" + salary + ", " + "age=" + age
+				+ ", dateOfJoining=" + dateOfJoining + '}' + "\n";
 	}
 
 	@Override

@@ -7,7 +7,6 @@ package com.home.explore.jdk2;
 
 import java.util.Arrays;
 
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 public class ExploreArraysMethods {
@@ -41,9 +40,9 @@ public class ExploreArraysMethods {
 			System.out.println("[]s are not same by commparing '=='  OR 'equals()'");
 
 		if (Arrays.equals(arr1, arr2))
-			System.out.println("[]s are same by commparing 'Arrays.equals'");
+			System.out.println("[]s are same by commparing 'Arrays.equals()'");
 		else
-			System.out.println("[]s are not same by commparing 'Arrays.equals'");
+			System.out.println("[]s are not same by commparing 'Arrays.equals()'");
 
 		// int arr[2]; // It is not allowed to put the size of the array
 		// boolean arr[] = new boolean[2]; //runtime exception IllegalFormatConversionException
@@ -51,39 +50,29 @@ public class ExploreArraysMethods {
 		System.out.format("\nArrays default element will be printed: %d and %d \n", arr[0], arr[1]);
 	}
 	
-	/**
-	 * Removing duplicate elements using HashSet (insertion order is not
-	 * maintained)
-	 * 
-	 * @param listWithDuplicateElements
-	 */
 	private static void sort(byte[] b, char[] c, short[] s, int[] i, long[] l, double[] d, String[] str,
 			boolean[] bln) {
 		System.out.println("\n(II). Sorted Result");
 		Arrays.sort(b);
-		System.out.println(Arrays.toString(b)); // Output : [8, 22, 37, 51]
+		System.out.println(Arrays.toString(b));
 
 		Arrays.sort(c);
-		System.out.println(Arrays.toString(c)); // Output : [A, A, R, R, S, Y]
+		System.out.println(Arrays.toString(c));
 
 		Arrays.sort(s);
-		System.out.println(Arrays.toString(s)); // Output : [5, 12, 19, 21, 24]
+		System.out.println(Arrays.toString(s));
 
 		Arrays.sort(i);
-		System.out.println(Arrays.toString(i)); // Output : [13, 13, 24, 28, 37,
-												// 45, 84]
+		System.out.println(Arrays.toString(i));
 
 		Arrays.sort(l);
-		System.out.println(Arrays.toString(l)); // Output : [258, 412, 856, 879,
-												// 985]
+		System.out.println(Arrays.toString(l));
 
 		Arrays.sort(d);
-		System.out.println(Arrays.toString(d)); // Output : [12.5, 14.9, 41.24,
-												// 55.8, 87.4]
+		System.out.println(Arrays.toString(d));
 
-		Arrays.sort(str); // Sorting the String array
-		System.out.println(Arrays.toString(str)); // Output : [Arrays, concepts,
-													// java, methods]
+		Arrays.sort(str);
+		System.out.println(Arrays.toString(str));
 
 		// Arrays.sort(bln); 
 		//Compile time error, because, there is no sort method in Arrays class which sorts boolean type array
