@@ -1,4 +1,4 @@
-package com.home.mjc.javaconceptoftheday.patterns;
+package com.home.coding.challenge.javaconceptoftheday.patterns;
 
 import java.util.Scanner;
 /*
